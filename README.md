@@ -12,7 +12,7 @@ Dr. Lisanne Huis in 't Veld
 This study was conducted in collaboration with Hibis, a data and business intelligence consultancy supporting Dutch long-term care organizations. The data was provided by one of their client organizations and contains operational workforce data spanning 52 months across 39 teams, resulting in 1,541 team-month observations.
 
 ## Research Goal
-To investigate whether monthly team absence rates in long-term care can be forecast using only operational workforce data, and to compare the performance of a Random Forest and Artificial Neural Network against a naïve lag-1 baseline.
+To investigate whether monthly team absence rates in long-term care can be forecast using only operational workforce data, and to compare the performance of a Random Forest and Artificial Neural Network against a naïve lag-1 baseline. 
 
 ## Repository Contents
 - `team_month_aggregation.sql` — SQL preprocessing script that aggregates individual-level HR, shift, and absence data to team-month level

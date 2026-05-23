@@ -13,7 +13,7 @@ WITH Contracts AS (
         SUM(Dv.FTE_Ziek) AS Totaal_FTE_Ziek,
         SUM(Dv.FTE_Toewijzing) AS Totaal_FTE_Toegewezen,
         ISNULL(SUM(Dv.FTE_Ziek), 0) / NULLIF(SUM(Dv.FTE_Toewijzing), 0) AS Verzuimpercentage
-        COUNT(DISTINCT Dv.FK_D_Medewerker) AS Teamomvang,
+        COUNT(DISTINCT Dv.FK_D_Medewerker) AS Teamomvang, 
         AVG(DATEDIFF(YEAR, P.Geboorte_datum, K.Datum)) AS Gem_Leeftijd,
         CAST(COUNT(DISTINCT CASE 
             WHEN P.Geslacht = 'V' 
